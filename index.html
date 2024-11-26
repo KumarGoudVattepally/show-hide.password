@@ -1,0 +1,70 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Show/Hide.Password</title>
+    <link rel="stylesheet" href="./index.css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div id="div">
+      <center>
+        <form id="form">
+          <input
+            type="text"
+            onfocus="isfocus(event)"
+            onblur="isblur(event)"
+            onmouseover="isover(event)"
+            onkeypress="iskey(event)"
+          /><br /><br />
+          <input
+            type="text"
+            onfocus="isfocus(event)"
+            onblur="isblur(event)"
+            onmouseleave="isdown(event)"
+            onkeyup="iskeyup(event)"
+          /><br /><br />
+          <input type="text"  /><br /><br />
+          <input type="submit" />
+          <p id="para"></p>
+
+        </form>
+      </center>
+    </div>
+    
+  </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="index.js"></script>
+</head>
+<body>
+  <form action="">
+    <input type="text" placeholder="Name">
+    <input type="password" id="pass"  placeholder="Password">
+    <input type="button" value="showpassword" onclick="clk(event)" id="but">
+  </form>
+  <script> let passwo=document.getElementById("pass")
+  let button=document.getElementById("but")
+    function clk(event){
+        if(passwo.type=="password"){
+            passwo.type="text"
+           but.value="hide password"
+
+        }else{
+            passwo.type="password"
+            
+             but.value="show Password"
+
+        }
+    }
+    
+
+    </script>
+</body>
+</html>
